@@ -13,20 +13,11 @@ const App = () => {
       , age: 14
       },
       { status: "active"
-      , age: 1
+      , age: 32
       },
       { status: "inactive"
       , age: 17
       },
-      { status: "active"
-      , age: 32
-      },
-      { status: "inactive"
-      , age: 43
-      },
-      { status: "active"
-      , age: 23
-      }
     ]
   }
 
@@ -55,19 +46,24 @@ const App = () => {
 
   const observable = new rx.Observable((subscriber: rx.Subscriber<Users>) => {
     subscriber.next(users2)
-    subscriber.complete()
-
-    subscriber.next(users2)
+    subscriber.next(users)
     subscriber.next(users2)
   }).pipe(
-    rxOp.map((value: Users) => {
+    rxOp.pluck("data"), 
+
+    // rxOp.map((value: Users) => {
       // console.log("1) Got data from observable", value)
-      return value.data
-    }),
+      // return value.data
+    // }),
+
+    rxOp.filter((value) => value.length >= 5),
+
     rxOp.map((value: User[]) => {
       // console.log("2) Got data from first operator", value)
       return R.filter(user => user.status === "active", value)
     }),
+
+
     rxOp.map((value: User[]) => {
       // console.log("3) Got data from second operator", value)
       return R.reduce((averageAge, user) => averageAge + user.age, 0, value) / value.length
