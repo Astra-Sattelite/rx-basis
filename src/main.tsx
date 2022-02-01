@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import './index.css'
 import App from './App'
-import { Pokemon } from './Pokemon'
+import { Pokemon } from './pokemon/Pokemon'
 import { Header } from './Header'
 import {
   BrowserRouter,
