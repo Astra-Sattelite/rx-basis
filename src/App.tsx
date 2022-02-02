@@ -44,7 +44,7 @@ const App = () => {
     ]
   }
 
-  const observable = new rx.Observable((subscriber: rx.Subscriber<Users>) => {
+  const observable$ = new rx.Observable((subscriber: rx.Subscriber<Users>) => {
     subscriber.next(users2)
     subscriber.next(users)
     subscriber.next(users2)
@@ -88,7 +88,7 @@ const App = () => {
     }
   }
 
-  observable.subscribe(observer)
+  observable$.subscribe(observer)
 
   return (
     <div className="AppMain"> 

@@ -26,6 +26,9 @@ export const Header = () => {
       <Link to="/pokemon" style={lazyHeaderButtonStyle}>
         Pokemon
       </Link>
+      <Link to="/rxcounter" style={lazyHeaderButtonStyle}>
+        RxCounter
+      </Link>
     </div>
   )
 };

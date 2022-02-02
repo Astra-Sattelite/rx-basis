@@ -4,7 +4,7 @@ import axios from "axios"
 import pokeSimple from "./pokemon-simple.json"
 import * as R from "ramda"
 
-type Pokemon = {
+export type Pokemon = {
   id: number;
   name: string;
   type: string[];

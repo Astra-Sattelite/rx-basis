@@ -2,13 +2,14 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import './index.css'
 import App from './App'
-import { Pokemon } from './pokemon/Pokemon'
+import { PokemonS } from './pokemon/Pokemon'
 import { Header } from './Header'
 import {
   BrowserRouter,
   Routes,
   Route
 } from "react-router-dom"
+import { RxCounter } from './RxCounter'
 
 ReactDOM.render(
   <React.StrictMode>
@@ -16,7 +17,8 @@ ReactDOM.render(
       <Header />
       <Routes>
         <Route path="/" element={<App />} />
-        <Route path="/pokemon" element={<Pokemon />} />
+        <Route path="/rxcounter" element={ <RxCounter /> }/>
+        <Route path="/pokemon" element={<PokemonS />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,
