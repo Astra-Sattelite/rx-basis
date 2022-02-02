@@ -9,7 +9,7 @@ import {
   Routes,
   Route
 } from "react-router-dom"
-import { RxCounter } from './RxCounter'
+import { RxAlarmCloak } from './RxCounter'
 
 ReactDOM.render(
   <React.StrictMode>
@@ -17,7 +17,7 @@ ReactDOM.render(
       <Header />
       <Routes>
         <Route path="/" element={<App />} />
-        <Route path="/rxcounter" element={ <RxCounter /> }/>
+        <Route path="/rx_alarm_cloak" element={ <RxAlarmCloak /> }/>
         <Route path="/pokemon" element={<PokemonS />} />
       </Routes>
     </BrowserRouter>
