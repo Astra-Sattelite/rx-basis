@@ -50,12 +50,7 @@ const App = () => {
     subscriber.next(users2)
   }).pipe(
     rxOp.pluck("data"), 
-
-    // rxOp.map((value: Users) => {
-      // console.log("1) Got data from observable", value)
-      // return value.data
-    // }),
-
+    
     rxOp.filter((value) => value.length >= 5),
 
     rxOp.map((value: User[]) => {

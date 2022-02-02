@@ -9,7 +9,7 @@ import {
   Routes,
   Route
 } from "react-router-dom"
-import { RxAlarmCloak } from './RxCounter'
+import { RxAlarmCloak } from './RxAlarmCloak'
 
 ReactDOM.render(
   <React.StrictMode>

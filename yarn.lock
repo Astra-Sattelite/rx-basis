@@ -708,6 +708,11 @@ object-assign@^4.1.1:
   resolved "https://registry.yarnpkg.com/object-assign/-/object-assign-4.1.1.tgz#2109adc7965887cfc05cbbd442cac8bfbb360863"
   integrity sha1-IQmtx5ZYh8/AXLvUQsrIv7s2CGM=
 
+observable-hooks@^4.2.0:
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/observable-hooks/-/observable-hooks-4.2.0.tgz#dd4df9678f90604a91f9fd66a4f924b503bfa530"
+  integrity sha512-bGjfGQI9vXrOIf1zAc3dmMqIXSqGQM+MLYOSQuqTzgP/8ptyDn9Gsm3tXXnohHkL7byyzHFc0/zuWyydUjtAFg==
+
 path-parse@^1.0.7:
   version "1.0.7"
   resolved "https://registry.yarnpkg.com/path-parse/-/path-parse-1.0.7.tgz#fbc114b60ca42b30d9daf5858e4bd68bbedb6735"
